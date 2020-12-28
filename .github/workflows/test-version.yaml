@@ -1,9 +1,7 @@
 name: Test hcap-version-check
 on:
   push:
-    branches: [ develop,master ]
   pull_request:
-    branches: [ develop,master ]
 jobs:
   versionCheck:
     runs-on: ubuntu-latest
