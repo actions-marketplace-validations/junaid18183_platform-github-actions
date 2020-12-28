@@ -19,10 +19,9 @@ outputs:
     description: 'version'
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.path}}
+  using: docker
+  image: ../image/Dockerfile
+  entrypoint: /entrypoint.sh
 
 branding:
   icon: globe
