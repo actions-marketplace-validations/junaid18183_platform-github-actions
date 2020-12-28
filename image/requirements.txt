@@ -1,0 +1,2 @@
+--index-url https://artifactory.reancloud.com/artifactory/api/pypi/virtual-pypi/simple
+reanplatform-cli==2.28.0

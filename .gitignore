@@ -1,0 +1,42 @@
+/tmp/
+/target/
+/coverage/
+/build/
+/.bundle/
+terraform.tfstate*
+
+# Documentation cache and generated files
+/.yardoc/
+/_yardoc/
+/rdoc/
+TAGS
+
+# Ignore VS code 
+.vscode/
+
+# Ignore Eclipse related files
+.metadata
+local.properties
+.settings/
+.loadpath
+.recommenders
+.externalToolBuilders/
+*.launch
+.target
+.apt_generated/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Used by dotenv library to load environment variables
+.envrc
+
+# Ignore Mac specific file
+.DS_Store
+
+# vendored inspec profiles
+test/*/vendor
+.DS_Store
+
+src/*/blueprint.inputs

@@ -1,0 +1,29 @@
+# action.yaml
+name: 'HCAP Github Action'
+description: 'HCAP Github Action'
+author: Juned Memon(junaid18183)
+
+inputs:
+  url:
+    description: HCAP URL
+    required: true
+  username:
+    description: HCAP username
+    required: true
+  password:
+    description: HCAP password
+    required: true
+
+outputs:
+  version:
+    description: 'version'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path}}
+
+branding:
+  icon: globe
+  color: purple
