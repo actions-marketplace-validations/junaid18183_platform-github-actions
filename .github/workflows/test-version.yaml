@@ -14,3 +14,6 @@ jobs:
           url: "example.com"
           username: "user"
           password: "password"
+        env:
+        ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+        ARTIFACTORY_API_KEY: ${{ secrets.ARTIFACTORY_API_KEY }}
