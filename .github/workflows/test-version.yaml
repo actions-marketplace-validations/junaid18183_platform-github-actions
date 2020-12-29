@@ -3,17 +3,17 @@ on:
   push:
   pull_request:
 jobs:
-  versionCheck:
+  HCAP_Version_Check:
     runs-on: ubuntu-latest
-    name: version check
+    name: HCAP version check
     steps:
       - uses: actions/checkout@v2
-      - name: version
+      - name: get the hcap version
         uses: ./hcap-version
+        id: hcap_cli
         with:
-          url: "example.com"
-          username: "user"
-          password: "password"
-        env:
-        ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
-        ARTIFACTORY_API_KEY: ${{ secrets.ARTIFACTORY_API_KEY }}
+          url: ${{ secrets.HCAP_URL }}
+          username: ${{ secrets.HCAP_USER }}
+          password: ${{ secrets.HCAP_PASSWORD }}
+      - name: Print the version
+        run: echo "The HCAP CLI Version is ${{ steps.hcap_cli.outputs.hcap_version }} and the URL is ${{ secrets.HCAP_URL }}"

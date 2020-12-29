@@ -15,13 +15,13 @@ inputs:
     required: true
 
 outputs:
-  version:
-    description: 'version'
+  hcap_version:
+    description: 'hcap_version'
 
 runs:
   using: docker
   image: ../image/Dockerfile
-  entrypoint: /entrypoint.sh
+  entrypoint: /action.sh
 
 branding:
   icon: globe

@@ -1,2 +1,2 @@
---index-url https://$ARTIFACTORY_USERNAME:$ARTIFACTORY_API_KEY@artifactory.reancloud.com/artifactory/api/pypi/virtual-pypi/simple
+--index-url $ARTIFACTORY_PYPI_URL
 reanplatform-cli==2.28.0
