@@ -20,7 +20,7 @@ outputs:
 
 runs:
   using: docker
-  image: ../image/Dockerfile
+  image: image/Dockerfile
   entrypoint: /action.sh
 
 branding:
