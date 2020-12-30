@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: get the hcap version
-        uses: ./hcap-version
+        uses: ./
         id: hcap_cli
         with:
           url: ${{ secrets.HCAP_URL }}
